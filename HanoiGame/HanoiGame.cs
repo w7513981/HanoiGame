@@ -13,15 +13,15 @@ namespace TowerofHanoiGame
         {
             Console.WriteLine("請輸入河內塔的高度：");
             string input = Console.ReadLine();
-            int disk = int.Parse(input);
+            Disk = int.Parse(input);
 
             Console.WriteLine("起始地的柱子:(1,2,3)");
             input = Console.ReadLine();
-            int from = int.Parse(input);
+            from = int.Parse(input);
 
             Console.WriteLine("目的地的柱子：(1,2,3)");
             input = Console.ReadLine();
-            int to = int.Parse(input);
+            to = int.Parse(input);
         }
         public void Play()
         {
@@ -42,6 +42,9 @@ namespace TowerofHanoiGame
             #endregion
 
             Hanoi(Disk, from, to, Aux);
+            Console.WriteLine(" ");
+            Console.WriteLine("都移完了!");
+            Console.WriteLine("按任意鍵離開");
             Console.ReadKey();
         }
 
