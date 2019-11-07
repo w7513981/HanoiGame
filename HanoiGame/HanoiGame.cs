@@ -8,7 +8,7 @@ namespace TowerofHanoiGame
 {
     public class HanoiGame
     {
-        int Disk, from, to, Aux, Dest, Src;
+        int Disk, from, to, Aux;
         public void Setup()
         {
             Console.WriteLine("請輸入河內塔的高度：");
