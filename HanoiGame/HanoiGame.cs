@@ -8,6 +8,7 @@ namespace TowerofHanoiGame
 {
     public class HanoiGame
     {
+        int Disk, from, to, Aux, Dest, Src;
         public void Setup()
         {
             Console.WriteLine("請輸入河內塔的高度：");
@@ -22,7 +23,7 @@ namespace TowerofHanoiGame
             input = Console.ReadLine();
             int to = int.Parse(input);
         }
-        public void Play(int Aux, int Disk, int from, int to)
+        public void Play()
         {
             #region // 取得 第三柱子
             /* 例如 輸入 1 3  得到  2
