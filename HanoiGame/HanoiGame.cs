@@ -45,7 +45,6 @@ namespace TowerofHanoiGame
             Console.WriteLine(" ");
             Console.WriteLine("都移完了!");
             Console.WriteLine("按任意鍵離開");
-            Console.ReadKey();
         }
 
         public void Hanoi(int Disk, int Src, int Dest, int Aux)
